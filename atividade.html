@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+    <br><br>
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" id="sobrenome">
+    <br><br>
+    <label for="idade">Idade:</label>
+    <input type="text" name="idade" id="idade">
+    <br><br>
+    <button id="botao">Gravar</button>
+    <br><br>
+
+    <img src="https://cdn.pensador.com/img/imagens/pe/ns/pensador_mensagens_de_bom_dia_21.jpg?auto_optimize=low&width=655" alt="">
+
+
+    <script>
+        var nome = document.getElementById("nome");
+        var sobrenome = document.getElementById("sobrenome");
+        var idade = document.getElementById("idade");
+        var button = document.getElementById("botao");
+        button.addEventListener("click", function () {
+            var nomelido = nome.value;
+            var sobrelido = sobrenome.value;
+            var idadelido = idade.value;
+            alert(" Seja bem vindo " + nomelido + " " + sobrelido + " voce possui " + idadelido);
+
+
+        });
+
+    </script>
+</body>
+
+</html>
